@@ -1,588 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-            integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <div class="container">
-            <header id="main-header">
-                <div class="row no-gutters">
-                    <div class="col-lg-4 col-md-5">
-                        <img src="img/myAvatar.png" alt="img" />
-                    </div>
-                    <div class="col-lg-8 col-md-7">
-                        <div class="d-flex flex-column">
-                            <div class="p-5 bg-dark text-white">
-                                <div
-                                    class="d-flex flex-row justify-content-between align-items-center"
-                                >
-                                    <h1 class="display-3">Alex Maltsev</h1>
-                                    <div class="d-none d-md-block">
-                                        <a
-                                            href="tel:+972532779386"
-                                            class="text-white"
-                                            title="053-277-9386"
-                                            ><i
-                                                class="fas fa-mobile-alt fa-3x"
-                                            ></i
-                                        ></a>
-                                    </div>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link
+   rel="stylesheet"
+   href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+   integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+   crossorigin="anonymous"
+  />
+  <link
+   rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+   integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+   crossorigin="anonymous"
+  />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Portfolio</title>
+ </head>
+ <body>
+  <div class="container">
+   <header id="main-header">
+    <div class="row no-gutters">
+     <div class="col-lg-4 col-md-5">
+      <img src="img/profile.jpg" alt="img" />
+     </div>
+     <div class="col-lg-8 col-md-7">
+      <div class="d-flex flex-column">
+       <div class="p-5 bg-dark text-white">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+         <h1 class="display-3">Alex Maltsev</h1>
+         <div class="d-none d-md-block">
+          <a href="tel:+972548955355" class="text-white" title="054-895-5355"
+           ><i class="fas fa-mobile-alt fa-3x"></i
+          ></a>
+         </div>
 
-                                    <div class="d-none d-md-block">
-                                        <a
-                                            href="mailto:1alexmaltsev@gmail.com"
-                                            class="text-white"
-                                            title="1alexmaltsev@gmail.com"
-                                            ><i
-                                                class="far fa-envelope fa-3x"
-                                            ></i
-                                        ></a>
-                                    </div>
+         <div class="d-none d-md-block">
+          <a
+           href="mailto:1maltsevalex@gmail.com"
+           class="text-white"
+           title="1maltsevalex@gmail.com"
+           ><i class="far fa-envelope fa-3x"></i
+          ></a>
+         </div>
 
-                                    <div class="d-none d-md-block">
-                                        <a
-                                            href="https://github.com/MasterSancho"
-                                            class="text-white"
-                                            title="github.com/MasterSancho"
-                                            ><i class="fab fa-github fa-3x"></i
-                                        ></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-4 bg-black">
-                                Front End Developer
-                            </div>
-
-                            <div
-                                class="d-flex flex-row text-white align-items-stretch text-center"
-                            >
-                                <div
-                                    class="port-item p-4 bg-primary"
-                                    data-toggle="collapse"
-                                    data-target="#home"
-                                >
-                                    <i class="fas fa-home fa-2x d-block"></i>
-                                    <span class="d-none d-sm-block">Home</span>
-                                </div>
-
-                                <div
-                                    class="port-item p-4 bg-success"
-                                    data-toggle="collapse"
-                                    data-target="#experience"
-                                >
-                                    <i
-                                        class="fas fa-folder-open fa-2x d-block"
-                                    ></i>
-                                    <span class="d-none d-sm-block"
-                                        >Experience</span
-                                    >
-                                </div>
-
-                                <div
-                                    class="port-item p-4 bg-secondary"
-                                    data-toggle="collapse"
-                                    data-target="#education"
-                                >
-                                    <i
-                                        class="fas fa-graduation-cap fa-2x d-block"
-                                    ></i>
-                                    <span class="d-none d-sm-block"
-                                        >Education</span
-                                    >
-                                </div>
-
-                                <div
-                                    class="port-item p-4 bg-danger"
-                                    data-toggle="collapse"
-                                    data-target="#contact"
-                                >
-                                    <i
-                                        class="fas fa-envelope fa-2x d-block"
-                                    ></i>
-                                    <span class="d-none d-sm-block"
-                                        >Contact</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Home -->
-            <div id="home" class="collapse show">
-                <div class="card card-body bg-primary text-white py-4">
-                    <h2>Welcome To My Page</h2>
-                    <p class="lead">
-                        Hello, I'm Alex a self taught front-end developer, with
-                        a strong creative passion. Seeking to find a junior
-                        level position where will give my strongest efforts. And
-                        be fully-committing to learning and implementing new
-                        skills from everyone. Always eager to listen and learn
-                        more.
-                    </p>
-                </div>
-
-                <div class="card card-body py-5">
-                    <h3>My Skills</h3>
-                    <p>
-                        Responsive websites, Web apps in modern JavaScript
-                        (ES6), React, Redux, HTML5, CSS3, Bootsrap 4, Git and
-                        strong Passion for developing.
-                    </p>
-                    <hr />
-                    <h4>HTML 5</h4>
-                    <div class="progress mb-3">
-                        <div
-                            class="progress-bar bg-success"
-                            style="width: 100%;"
-                        ></div>
-                    </div>
-                    <h4>CSS 3</h4>
-                    <div class="progress mb-3">
-                        <div
-                            class="progress-bar bg-success"
-                            style="width: 100%;"
-                        ></div>
-                    </div>
-                    <h4>Bootstrap 4</h4>
-                    <div class="progress mb-3">
-                        <div
-                            class="progress-bar bg-success"
-                            style="width: 100%;"
-                        ></div>
-                    </div>
-                    <h4>JavaScript</h4>
-                    <div class="progress mb-3">
-                        <div
-                            class="progress-bar bg-success"
-                            style="width: 90%;"
-                        ></div>
-                    </div>
-                    <h4>React.js</h4>
-                    <div class="progress mb-3">
-                        <div
-                            class="progress-bar bg-success"
-                            style="width: 90%;"
-                        ></div>
-                    </div>
-                    <h4>Passion</h4>
-                    <div class="progress mb-3">
-                        <div
-                            class="progress-bar bg-success"
-                            style="width: 100%;"
-                        ></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience -->
-            <div id="experience" class="collapse">
-                <div class="card card-body bg-success text-white py-5">
-                    <h2>My Projects</h2>
-                    <p class="lead">
-                        E-Market: React.js / Redux <br />
-                        Github Finder: React.js / Context.API <br />
-                        Breakout Game: Vanila JavaScript / Canvas API
-                    </p>
-                </div>
-
-                <div class="card card-body py-5">
-                    <h3>What Have I Built</h3>
-                    <p>
-                        My faforite projects
-                    </p>
-                    <div class="card-deck">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">React Project</h4>
-                                <img
-                                    src="img/logo_m.png"
-                                    class="card-img-top"
-                                    alt=""
-                                />
-                                <p class="card-text">
-                                    E-commerce project have navigation and
-                                    routing that takes to different pages of
-                                    categories of items. These items able to add
-                                    to cart and see things directly updated.
-                                    From cart able to checkout and increase or
-                                    decrease items. Checkout page integrated
-                                    with a stripe API so can handle payments.
-                                    Also integrated with firebase to handle
-                                    authentication users accounts. Reselect
-                                    optimizing app in order to avoid unnecessary
-                                    re renders. Persistfor LocalStorage items in
-                                    cart. Styled-components for style.
-                                </p>
-                                <p class="p-2 mb-3 bg-dark text-white">
-                                    React | Redux | Logger | Persist | Router |
-                                    Reselect | Styled-Components | Firebase |
-                                    Stripe API
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a
-                                    class="btn btn-secondary btn-block"
-                                    href="https://e-1market.netlify.app/"
-                                    role="button"
-                                    target="_blank"
-                                    >See Live</a
-                                >
-                                <a
-                                    class="btn btn-secondary btn-block"
-                                    href="https://github.com/MasterSancho/React-E-Commerce-Project"
-                                    role="button"
-                                    target="_blank"
-                                    >Source Code</a
-                                >
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">React Project</h4>
-                                <img
-                                    src="img/logo_g.png"
-                                    class="card-img-top"
-                                    alt=""
-                                />
-                                <p class="card-text">
-                                    Github Finder project have all function
-                                    components using hooks like useState and
-                                    useEffect. App level state using the context
-                                    API also useReducer hook and useContext
-                                    hook. Also using third party API and can
-                                    search github users and latest repositories.
-                                    GithubState component has all the pieces of
-                                    state, as well all actions.
-                                </p>
-                                <p class="p-2 mb-3 bg-dark text-white">
-                                    React | Context API | Hooks | Router | Axios
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a
-                                    class="btn btn-secondary btn-block"
-                                    href="https://git-users-finder.netlify.app/"
-                                    role="button"
-                                    target="_blank"
-                                    >See Live</a
-                                >
-                                <a
-                                    class="btn btn-secondary btn-block"
-                                    href="https://github.com/MasterSancho/githubfinder"
-                                    role="button"
-                                    target="_blank"
-                                    >Source Code</a
-                                >
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">JavaScript Project</h4>
-                                <img
-                                    src="img/logo_b.png"
-                                    class="card-img-top"
-                                    alt=""
-                                />
-                                <p class="card-text">
-                                    Breakout Game have Canvas for the most part
-                                    of html. A little paddle can move back and
-                                    forth, the ball bounces to break the bricks,
-                                    and each time it touch a brick it disappears
-                                    and score increases. If a paddle miss the
-                                    ball, bricks come back and score resets. All
-                                    done with JavaScript Vanila and Canavas API.
-                                </p>
-                                <p class="p-2 mb-3 bg-dark text-white">
-                                    Html 5 | Canvas API | JavaScript
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a
-                                    class="btn btn-secondary btn-block"
-                                    href="https://breakoutjsgame.netlify.app/"
-                                    role="button"
-                                    target="_blank"
-                                    >See Live</a
-                                >
-                                <a
-                                    class="btn btn-secondary btn-block"
-                                    href="https://github.com/MasterSancho/JS-App-Breakout-Game"
-                                    role="button"
-                                    target="_blank"
-                                    >Source Code</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Education -->
-            <div id="education" class="collapse">
-                <div class="card card-body bg-secondary text-white py-4">
-                    <h2>My Education</h2>
-                    <p class="lead">
-                        John Bryce, Full Stack Web Developer (4578) <br />
-                        Zero To Mastery Academy, Complete React Developer
-                        (Redux, Hooks, GraphQL, ContextAPI, Stripe, Firebase)
-                        <br />
-                        Udemy, More then 10 courses of Full Stack Developing
-                    </p>
-                </div>
-
-                <div class="card card-body py-5">
-                    <h3>Udemy Courses</h3>
-                    <p>
-                        Did more then 10 courses of Full Stack Developing from
-                        junior to senior, some of them repeat few times for deep
-                        understanding. Strong with JavaScript, React.Js and
-                        creating from scratch. Keep learning to become senior
-                        Full Stack Developer.
-                    </p>
-                    <div class="row no-gutters">
-                        <div class="col-md-3">
-                            <a
-                                href="img/certificates/Cert_5.jpg"
-                                data-toggle="lightbox"
-                            >
-                                <img
-                                    src="img/certificates/Cert_5.jpg"
-                                    alt="img"
-                                    class="img-fluid"
-                                />
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a
-                                href="img/certificates/Cert_2.jpg"
-                                data-toggle="lightbox"
-                            >
-                                <img
-                                    src="img/certificates/Cert_2.jpg"
-                                    alt="img"
-                                    class="img-fluid"
-                                />
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a
-                                href="img/certificates/Cert_3.jpg"
-                                data-toggle="lightbox"
-                            >
-                                <img
-                                    src="img/certificates/Cert_3.jpg"
-                                    alt="img"
-                                    class="img-fluid"
-                                />
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a
-                                href="img/certificates/Cert_1.jpg"
-                                data-toggle="lightbox"
-                            >
-                                <img
-                                    src="img/certificates/Cert_1.jpg"
-                                    alt="img"
-                                    class="img-fluid"
-                                />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row no-gutters">
-                        <div class="col-md-3">
-                            <a
-                                href="img/certificates/Cert_6.jpg"
-                                data-toggle="lightbox"
-                            >
-                                <img
-                                    src="img/certificates/Cert_6.jpg"
-                                    alt="img"
-                                    class="img-fluid"
-                                />
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a
-                                href="img/certificates/Cert_4.jpg"
-                                data-toggle="lightbox"
-                            >
-                                <img
-                                    src="img/certificates/Cert_4.jpg"
-                                    alt="img"
-                                    class="img-fluid"
-                                />
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a
-                                href="img/certificates/Cert_7.jpg"
-                                data-toggle="lightbox"
-                            >
-                                <img
-                                    src="img/certificates/Cert_7.jpg"
-                                    alt="img"
-                                    class="img-fluid"
-                                />
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a
-                                href="img/certificates/Cert_8.jpg"
-                                data-toggle="lightbox"
-                            >
-                                <img
-                                    src="img/certificates/Cert_8.jpg"
-                                    alt="img"
-                                    class="img-fluid"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact -->
-            <div id="contact" class="collapse">
-                <div class="card card-body bg-danger text-white py-5">
-                    <h2>Contact</h2>
-                    <p class="lead">
-                        Hello, I'm Alex, a talented front end developer. I bring
-                        to the table my problem solving state of mind, and a
-                        unique point of view. I specialize in logic thinking,
-                        whether it's code or visual design. Currently I'm
-                        looking for a front end developer role. If you want to
-                        know more about me, you can contact me via mail or
-                        phone.
-                    </p>
-                </div>
-
-                <div class="card card-body py-5">
-                    <h3>Your message here</h3>
-                    <br />
-                    <form
-                        action="mailto:1alexmaltsev@gmail.com"
-                        method="post"
-                        enctype="text/plain"
-                    >
-                        <div class="form-group">
-                            <div class="input-group input-group-lg">
-                                <div class="input-group-prepend">
-                                    <span
-                                        class="input-group-text bg-danger text-white"
-                                    >
-                                        <i class="fas fa-user"></i>
-                                    </span>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    class="form-control bg-dark text-white"
-                                    placeholder="Name"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group input-group-lg">
-                                <div class="input-group-prepend">
-                                    <span
-                                        class="input-group-text bg-danger text-white"
-                                    >
-                                        <i class="fas fa-envelope"></i>
-                                    </span>
-                                </div>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    class="form-control bg-dark text-white"
-                                    placeholder="Email"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group input-group-lg">
-                                <div class="input-group-prepend">
-                                    <span
-                                        class="input-group-text bg-danger text-white"
-                                    >
-                                        <i class="fas fa-pencil-alt"></i>
-                                    </span>
-                                </div>
-                                <textarea
-                                    type="text"
-                                    name="message"
-                                    class="form-control bg-dark text-white"
-                                    placeholder="Message"
-                                ></textarea>
-                            </div>
-                        </div>
-                        <input
-                            type="submit"
-                            value="Submit"
-                            class="btn btn-danger btn-block btn-lg"
-                        />
-                    </form>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <footer id="main-footer" class="p-5 bg-dark text-white">
-                <div class="row">
-                    <div class="col-md-4">
-                        <a
-                            href="https://drive.google.com/file/d/14TAdy2ehg502KFN8sTTBDkMg7ewH0fc3/view?usp=sharing"
-                            class="btn btn-outline-light"
-                            target="_blank"
-                        >
-                            <i class="fas fa-cloud"></i> Download Resume
-                        </a>
-                    </div>
-                </div>
-            </footer>
+         <div class="d-none d-md-block">
+          <a
+           href="https://github.com/MasterSancho"
+           class="text-white"
+           title="github.com/MasterSancho"
+           ><i class="fab fa-github fa-3x"></i
+          ></a>
+         </div>
         </div>
+       </div>
 
-        <script src="./css/jquery_3.3.1.min.js"></script>
-        <script src="./css/popper.min.js"></script>
-        <script src="./css/bootstrap.min.js"></script>
-        <script src="./css/ekko-lightbox.min.js"></script>
+       <div class="p-4 bg-black">
+        <h2 class="text-center">Junior Full Stack Developer</h2>
+       </div>
 
-        <script>
-            $('.port-item').click(function () {
-                $('.collapse').collapse('hide');
-            });
+       <!-- <div class="d-flex flex-row text-white align-items-stretch text-center"> -->
+       <div class="container">
+        <div class="row align-items-stretch text-center text-white">
+         <div
+          class="port-item p-4 bg-primary col"
+          data-toggle="collapse"
+          data-target="#home"
+         >
+          <i class="fas fa-home fa-3x d-block"></i>
+          <span class="d-none d-sm-block">Home</span>
+         </div>
 
-            $(document).on('click', '[data-toggle="lightbox"]', function (e) {
-                e.preventDefault();
-                $(this).ekkoLightbox();
-            });
-        </script>
-    </body>
+         <div
+          class="port-item p-4 bg-success col"
+          data-toggle="collapse"
+          data-target="#experience"
+         >
+          <i class="fas fa-folder-open fa-3x d-block"></i>
+          <span class="d-none d-sm-block">Projects</span>
+         </div>
+
+         <div
+          class="port-item p-4 bg-secondary col"
+          data-toggle="collapse"
+          data-target="#education"
+         >
+          <i class="fas fa-graduation-cap fa-2x d-block"></i>
+          <span class="d-none d-sm-block">Education</span>
+         </div>
+
+         <div
+          class="port-item p-4 bg-danger col"
+          data-toggle="collapse"
+          data-target="#contact"
+         >
+          <i class="fas fa-envelope fa-3x d-block"></i>
+          <span class="d-none d-sm-block">Contact</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </header>
+
+   <!-- Home -->
+   <div id="home" class="collapse show">
+    <div class="card card-body bg-primary text-white py-4">
+     <h2>Welcome To My Page</h2>
+     <p class="lead">
+      Hello, I'm Alex a self taught front-end developer, with a strong creative
+      passion. Seeking to find a junior level position where will give my
+      strongest efforts. And be fully-committing to learning and implementing
+      new skills from everyone. Always eager to listen and learn more.
+     </p>
+    </div>
+
+    <div class="card card-body py-5">
+     <h3>My Skills</h3>
+     <p>
+      Responsive websites, Web apps in modern JavaScript (ES6), React, Redux,
+      HTML5, CSS3, Bootsrap 4, Git and strong Passion for developing.
+     </p>
+     <hr />
+     <h4>HTML 5</h4>
+     <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 100%"></div>
+     </div>
+     <h4>CSS 3</h4>
+     <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 100%"></div>
+     </div>
+     <h4>Bootstrap 4</h4>
+     <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 100%"></div>
+     </div>
+     <h4>JavaScript</h4>
+     <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 90%"></div>
+     </div>
+     <h4>React.js</h4>
+     <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 90%"></div>
+     </div>
+     <h4>Passion</h4>
+     <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 100%"></div>
+     </div>
+    </div>
+   </div>
+
+   <!-- Experience -->
+   <div id="experience" class="collapse">
+    <div class="card card-body bg-success text-white py-5">
+     <h2>My Projects</h2>
+     <p class="lead">
+      E-Market: React.js / Redux <br />
+      Github Finder: React.js / Context.API <br />
+      Breakout Game: Vanila JavaScript / Canvas API
+     </p>
+    </div>
+
+    <div class="card card-body py-5">
+     <h3>What Have I Built</h3>
+     <p>My faforite projects</p>
+     <div class="card-deck">
+      <div class="card">
+       <div class="card-body">
+        <h4 class="card-title">React Project</h4>
+        <img src="img/logo_m.png" class="card-img-top" alt="" />
+        <p class="card-text">
+         E-commerce project have navigation and routing that takes to different
+         pages of categories of items. These items able to add to cart and see
+         things directly updated. From cart able to checkout and increase or
+         decrease items. Checkout page integrated with a stripe API so can
+         handle payments. Also integrated with firebase to handle authentication
+         users accounts. Reselect optimizing app in order to avoid unnecessary
+         re renders. Persistfor LocalStorage items in cart. Styled-components
+         for style.
+        </p>
+        <p class="p-2 mb-3 bg-dark text-white">
+         React | Redux | Logger | Persist | Router | Reselect |
+         Styled-Components | Firebase | Stripe API
+        </p>
+       </div>
+       <div class="card-footer">
+        <a
+         class="btn btn-secondary btn-block"
+         href="https://e-1market.netlify.app/"
+         role="button"
+         target="_blank"
+         >See Live</a
+        >
+        <a
+         class="btn btn-secondary btn-block"
+         href="https://github.com/MasterSancho/React-E-Commerce-Project"
+         role="button"
+         target="_blank"
+         >Source Code</a
+        >
+       </div>
+      </div>
+
+      <div class="card">
+       <div class="card-body">
+        <h4 class="card-title">React Project</h4>
+        <img src="img/logo_g.png" class="card-img-top" alt="" />
+        <p class="card-text">
+         Github Finder project have all function components using hooks like
+         useState and useEffect. App level state using the context API also
+         useReducer hook and useContext hook. Also using third party API and can
+         search github users and latest repositories. GithubState component has
+         all the pieces of state, as well all actions.
+        </p>
+        <p class="p-2 mb-3 bg-dark text-white">
+         React | Context API | Hooks | Router | Axios
+        </p>
+       </div>
+       <div class="card-footer">
+        <a
+         class="btn btn-secondary btn-block"
+         href="https://git-users-finder.netlify.app/"
+         role="button"
+         target="_blank"
+         >See Live</a
+        >
+        <a
+         class="btn btn-secondary btn-block"
+         href="https://github.com/MasterSancho/githubfinder"
+         role="button"
+         target="_blank"
+         >Source Code</a
+        >
+       </div>
+      </div>
+
+      <div class="card">
+       <div class="card-body">
+        <h4 class="card-title">JavaScript Project</h4>
+        <img src="img/logo_b.png" class="card-img-top" alt="" />
+        <p class="card-text">
+         Breakout Game have Canvas for the most part of html. A little paddle
+         can move back and forth, the ball bounces to break the bricks, and each
+         time it touch a brick it disappears and score increases. If a paddle
+         miss the ball, bricks come back and score resets. All done with
+         JavaScript Vanila and Canavas API.
+        </p>
+        <p class="p-2 mb-3 bg-dark text-white">
+         Html 5 | Canvas API | JavaScript
+        </p>
+       </div>
+       <div class="card-footer">
+        <a
+         class="btn btn-secondary btn-block"
+         href="https://breakoutjsgame.netlify.app/"
+         role="button"
+         target="_blank"
+         >See Live</a
+        >
+        <a
+         class="btn btn-secondary btn-block"
+         href="https://github.com/MasterSancho/JS-App-Breakout-Game"
+         role="button"
+         target="_blank"
+         >Source Code</a
+        >
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <!-- Education -->
+   <div id="education" class="collapse">
+    <div class="card card-body bg-secondary text-white py-4">
+     <h2>My Education</h2>
+     <p class="lead">
+      John Bryce, Full Stack Web Developer (4578) <br />
+      Zero To Mastery Academy, Complete React Developer (Redux, Hooks, GraphQL,
+      ContextAPI, Stripe, Firebase)
+      <br />
+      Udemy, More then 10 courses of Full Stack Developing
+     </p>
+    </div>
+
+    <div class="card card-body py-5">
+     <h3>Udemy Courses</h3>
+     <p>
+      Did more then 10 courses of Full Stack Developing from junior to senior,
+      some of them repeat few times for deep understanding. Strong with
+      JavaScript, React.Js and creating from scratch. Keep learning to become
+      senior Full Stack Developer.
+     </p>
+     <div class="row no-gutters">
+      <div class="col-md-3">
+       <a href="img/certificates/Cert_5.jpg" data-toggle="lightbox">
+        <img src="img/certificates/Cert_5.jpg" alt="img" class="img-fluid" />
+       </a>
+      </div>
+      <div class="col-md-3">
+       <a href="img/certificates/Cert_2.jpg" data-toggle="lightbox">
+        <img src="img/certificates/Cert_2.jpg" alt="img" class="img-fluid" />
+       </a>
+      </div>
+      <div class="col-md-3">
+       <a href="img/certificates/Cert_3.jpg" data-toggle="lightbox">
+        <img src="img/certificates/Cert_3.jpg" alt="img" class="img-fluid" />
+       </a>
+      </div>
+      <div class="col-md-3">
+       <a href="img/certificates/Cert_1.jpg" data-toggle="lightbox">
+        <img src="img/certificates/Cert_1.jpg" alt="img" class="img-fluid" />
+       </a>
+      </div>
+     </div>
+
+     <div class="row no-gutters">
+      <div class="col-md-3">
+       <a href="img/certificates/Cert_6.jpg" data-toggle="lightbox">
+        <img src="img/certificates/Cert_6.jpg" alt="img" class="img-fluid" />
+       </a>
+      </div>
+      <div class="col-md-3">
+       <a href="img/certificates/Cert_4.jpg" data-toggle="lightbox">
+        <img src="img/certificates/Cert_4.jpg" alt="img" class="img-fluid" />
+       </a>
+      </div>
+      <div class="col-md-3">
+       <a href="img/certificates/Cert_7.jpg" data-toggle="lightbox">
+        <img src="img/certificates/Cert_7.jpg" alt="img" class="img-fluid" />
+       </a>
+      </div>
+      <div class="col-md-3">
+       <a href="img/certificates/Cert_8.jpg" data-toggle="lightbox">
+        <img src="img/certificates/Cert_8.jpg" alt="img" class="img-fluid" />
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <!-- Contact -->
+   <div id="contact" class="collapse">
+    <div class="card card-body bg-danger text-white py-5">
+     <h2>Contact</h2>
+     <p class="lead">
+      Hello, I'm Alex, a talented front end developer. I bring to the table my
+      problem solving state of mind, and a unique point of view. I specialize in
+      logic thinking, whether it's code or visual design. Currently I'm looking
+      for a front end developer role. If you want to know more about me, you can
+      contact me via mail or phone.
+     </p>
+    </div>
+
+    <div class="card card-body py-5">
+     <h3>Your message here</h3>
+     <br />
+     <form
+      action="mailto:1alexmaltsev@gmail.com"
+      method="post"
+      enctype="text/plain"
+     >
+      <div class="form-group">
+       <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+         <span class="input-group-text bg-danger text-white">
+          <i class="fas fa-user"></i>
+         </span>
+        </div>
+        <input
+         type="text"
+         name="name"
+         class="form-control bg-dark text-white"
+         placeholder="Name"
+        />
+       </div>
+      </div>
+
+      <div class="form-group">
+       <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+         <span class="input-group-text bg-danger text-white">
+          <i class="fas fa-envelope"></i>
+         </span>
+        </div>
+        <input
+         type="email"
+         name="email"
+         class="form-control bg-dark text-white"
+         placeholder="Email"
+        />
+       </div>
+      </div>
+
+      <div class="form-group">
+       <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+         <span class="input-group-text bg-danger text-white">
+          <i class="fas fa-pencil-alt"></i>
+         </span>
+        </div>
+        <textarea
+         type="text"
+         name="message"
+         class="form-control bg-dark text-white"
+         placeholder="Message"
+        ></textarea>
+       </div>
+      </div>
+      <input
+       type="submit"
+       value="Submit"
+       class="btn btn-danger btn-block btn-lg"
+      />
+     </form>
+    </div>
+   </div>
+
+   <!-- Footer -->
+   <footer id="main-footer" class="p-5 bg-dark text-white">
+    <div class="row">
+     <div class="col-md-4">
+      <a
+       href="https://drive.google.com/file/d/14TAdy2ehg502KFN8sTTBDkMg7ewH0fc3/view?usp=sharing"
+       class="btn btn-outline-light"
+       target="_blank"
+      >
+       <i class="fas fa-cloud"></i> Download Resume
+      </a>
+     </div>
+    </div>
+   </footer>
+  </div>
+
+  <script src="./css/jquery_3.3.1.min.js"></script>
+  <script src="./css/popper.min.js"></script>
+  <script src="./css/bootstrap.min.js"></script>
+  <script src="./css/ekko-lightbox.min.js"></script>
+
+  <script>
+   $('.port-item').click(function () {
+    $('.collapse').collapse('hide');
+   });
+
+   $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+    e.preventDefault();
+    $(this).ekkoLightbox();
+   });
+  </script>
+ </body>
 </html>
